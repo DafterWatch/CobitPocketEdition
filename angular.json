@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "CobitPocketEdition"
+  "defaultProject": "CobitPocketEdition",
+  "cli": {
+    "analytics": "5782f13b-cfcc-4a50-a687-cb2f997b36ee"
+  }
 }
