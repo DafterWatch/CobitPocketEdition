@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DominiosComponent } from './components/dominios/dominios.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';
+import { EvaluacionComponent } from './components/evaluacion/evaluacion.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProcesosComponent } from './components/procesos/procesos.component';
     PagprincipalComponent,
     LoginComponent,
     DominiosComponent,
-    ProcesosComponent
+    ProcesosComponent,
+    EvaluacionComponent
   ],
   imports: [
     BrowserModule,

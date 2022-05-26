@@ -1,5 +1,4 @@
-
-    <div class="container mt-5 mb-5">
+    <div class="container mt-3 mb-3">
         <div class="card-body">
           <button class="btn btn-lg btn-primary m-2 float-end" routerLink="/login" style="background-color: #003ca1;">Cerrar Sesion</button>
           <span class="h1">PROCESOS</span>
@@ -7,12 +6,12 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4" *ngFor="let proceso of procesos">
                 <div class="card border-primary mb-3" style="max-width: 25rem; height: 350px; max-height: 400px;">
-                    <div class="card-header">PO1</div>
+                    <div class="card-header">{{proceso.name}}</div>
                     <div class="card-body text-primary">
-                      <h5 class="card-title">Definir un Plan Estratégico de TI</h5>
-                      <p class="card-text">El objetivo es lograr un balance óptimo entre las oportunidades de tecnología de información y los requerimientos de TI de negocio, para asegurar sus logros futuros. </p>
+                      <h5 class="card-title">{{proceso.title}}</h5>
+                      <p class="card-text">{{proceso.description}}</p>
                       <div class="form-check">
                         <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
@@ -22,104 +21,10 @@
                     </div>
                   </div>
                 <br>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-secondary mb-3" style="max-width: 25rem; height: 350px; max-height: 400px;">
-                    <div class="card-header">PO2</div>
-                    <div class="card-body text-secondary">
-                      <h5 class="card-title">Definir la Arquitectura de la Información</h5>
-                      <p class="card-text">El objetivo es satisfacer los requerimientos de la organización, en cuanto al manejo y gestión de los sistemas de información, a través de la creación y mantenimiento de un modelo de información de la organización. </p>
-                      <div class="form-check">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          AGREGAR
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                <br>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-success mb-3" style="max-width: 25rem; height: 350px; max-height: 400px;">
-                    <div class="card-header">PO3</div>
-                    <div class="card-body text-success">
-                      <h5 class="card-title">Determinar la dirección tecnológica</h5>
-                      <p class="card-text">El objetivo es aprovechar al máximo la tecnología disponible o tecnología emergente, satisfaciendo los requerimientos de la organización, a través de la creación y mantenimiento de un plan de infraestructura tecnológica. </p>
-                      <div class="form-check">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            AGREGAR
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                <br>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-danger mb-3" style="max-width: 25rem; height: 350px; max-height: 400px;">
-                    <div class="card-header">PO4</div>
-                    <div class="card-body text-danger">
-                      <h5 class="card-title">Definir la Organización y Relaciones de TI</h5>
-                      <p class="card-text">El objetivo es la prestación de servicios de TI, por medio de una organización conveniente en número y habilidades, con tareas y responsabilidades definidas y comunicadas</p>
-                      <div class="form-check">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            AGREGAR
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                <br>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-warning mb-3" style="max-width: 25rem; height: 350px; max-height: 400px;">
-                    <div class="card-header">PO5</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Manejar la Inversión en TI</h5>
-                      <p class="card-text">El objetivo es la satisfacción de los requerimientos de la organización, asegurando el financiamiento y el control de desembolsos de recursos financieros. </p>
-                      <div class="form-check">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            AGREGAR
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                <br>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-info mb-3" style="max-width: 25rem; height: 350px; max-height: 400px;">
-                    <div class="card-header">PO6</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Comunicar las directrices y aspiraciones gerenciales:</h5>
-                      <p class="card-text">El objetivo es asegurar el conocimiento y comprensión de los usuarios sobre las aspiraciones de la gerencia, a través de políticas establecidas y transmitidas a la comunidad de usuarios, necesitándose para esto estándares para traducir las opciones estratégicas en reglas de usuario prácticas y utilizables</p>
-                      <div class="form-check">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            AGREGAR
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                <br>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-dark mb-3" style="max-width: 25rem; height: 350px; max-height: 400px;">
-                    <div class="card-header">PO7</div>
-                    <div class="card-body text-dark">
-                      <h5 class="card-title">Administrar Recursos Humanos</h5>
-                      <p class="card-text">El objetivo es maximizar las contribuciones del personal a los procesos de TI, satisfaciendo así los requerimientos de negocio, a través de técnicas sólidas para administración de personal</p>
-                      <div class="form-check">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            AGREGAR
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                <br>
-            </div>
+            </div> 
     </div>
+    <button class="btn btn-lg btn-primary m-2 float-start" routerLink="/dominios" style="background-color: #003ca1;">Volver Dominios</button>
+    <button class="btn btn-lg btn-primary m-2 float-end" routerLink="/evaluacion" style="background-color: #003ca1;">Siguiente</button>
   
     
       

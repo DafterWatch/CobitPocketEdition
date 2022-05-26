@@ -7,9 +7,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProcesosComponent implements OnInit {
 
-  constructor() { }
+  procesos: any[] = []
+
+  constructor() { 
+    this.getProcesos()
+  }
 
   ngOnInit(): void {
+  }
+
+  getProcesos(){
+    this.procesos.push(
+      {
+        id: "proceso1",
+        name: "PO1",
+        title: "Definir un Plan Estratégico de TI",
+        description: "El objetivo es lograr un balance óptimo entre las oportunidades de tecnologia de información y los requierimientos de TI de negocio, para asegurar sus logros futuros."
+      },
+      {
+        id: "proceso1",
+        name: "PO1",
+        title: "Definir un Plan Estratégico de TI",
+        description: "El objetivo es lograr un balance óptimo entre las oportunidades de tecnologia de información y los requierimientos de TI de negocio, para asegurar sus logros futuros."
+      },
+      {
+        id: "proceso1",
+        name: "PO1",
+        title: "Definir un Plan Estratégico de TI",
+        description: "El objetivo es lograr un balance óptimo entre las oportunidades de tecnologia de información y los requierimientos de TI de negocio, para asegurar sus logros futuros."
+      },
+      {
+        id: "proceso1",
+        name: "PO1",
+        title: "Definir un Plan Estratégico de TI",
+        description: "El objetivo es lograr un balance óptimo entre las oportunidades de tecnologia de información y los requierimientos de TI de negocio, para asegurar sus logros futuros."
+      },
+      {
+        id: "proceso1",
+        name: "PO1",
+        title: "Definir un Plan Estratégico de TI",
+        description: "El objetivo es lograr un balance óptimo entre las oportunidades de tecnologia de información y los requierimientos de TI de negocio, para asegurar sus logros futuros."
+      }
+    )
   }
 
 }
