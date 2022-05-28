@@ -10,6 +10,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DominiosComponent } from './components/dominios/dominios.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';
 import { EvaluacionComponent } from './components/evaluacion/evaluacion.component';
+import { AngularFireModule } from '@angular/fire/compat'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDWrLDx28-SG-4XOx9L_kTQVQyd4WoDjTo",
+  authDomain: "cobitpocketedition.firebaseapp.com",
+  projectId: "cobitpocketedition",
+  storageBucket: "cobitpocketedition.appspot.com",
+  messagingSenderId: "20202039173",
+  appId: "1:20202039173:web:83a308464c699dee5ec6ec"
+};
 
 @NgModule({
   declarations: [
@@ -24,7 +36,9 @@ import { EvaluacionComponent } from './components/evaluacion/evaluacion.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

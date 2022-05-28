@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cobitpocketedition": {
+      "hosting": {
+        "CobitPocketEdition": [
+          "cobitpocketedition"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cobitpocketedition"
+  }
+}
